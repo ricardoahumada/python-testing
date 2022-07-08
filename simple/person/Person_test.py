@@ -55,3 +55,10 @@ class Test(unittest.TestCase):
                 self.assertEqual('There is no such user', self.person.get_name(i))
         print("\nFinish get_name test\n")
 
+    # verifies that only valid names are added to Person.name length gt 3 chars
+    def test_2_valid_set_names(self):
+        validName='Juan'
+        invalidName='Lu'
+        self.assertTrue(self.person.set_name(validName) >= 0)
+        self.assertTrue(self.person.set_name(invalidName) < 0)
+        

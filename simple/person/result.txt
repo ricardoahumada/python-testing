@@ -1,0 +1,11 @@
+====================================================== test session starts ======================================================
+platform win32 -- Python 3.9.13, pytest-7.1.2, pluggy-1.0.0 -- C:\Users\Administrator\AppData\Local\Programs\Python\Python39\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Worksapce\python-testing\simple\person
+collecting ... collected 3 items
+
+Person_test.py::Test::test_0_set_name PASSED                                                                               [ 33%]
+Person_test.py::Test::test_1_get_name PASSED                                                                               [ 66%]
+Person_test.py::Test::test_2_valid_set_names PASSED                                                                        [100%]
+
+======================================================= 3 passed in 0.03s =======================================================
