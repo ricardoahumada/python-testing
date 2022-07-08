@@ -1,9 +1,7 @@
-import json
 import os
-from types import SimpleNamespace
 
 class CustomerManager:
-    customers = []
+    customers = None
 
     def get_customer(self, id):
         for item in self.customers:
@@ -15,11 +13,5 @@ class CustomerManager:
 
 def App(database):
     customerManager = CustomerManager()
-    directory = os.getcwd()
-    print(directory)
-    with open(database, 'r') as f:
-        data = json.load(f, object_hook=lambda d: SimpleNamespace(**d))
-    # print(data)
-
-    customerManager.customers = data
+    customerManager.customers = database.load_data()
     return customerManager
