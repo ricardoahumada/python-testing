@@ -17,8 +17,6 @@ class Mock_Database:
         # print(data)
         return data
 
-# Copied from realpython.com for example - won't run
-
 
 class TestBasic(unittest.TestCase):
     def setUp(self):
@@ -38,7 +36,8 @@ class TestBasic(unittest.TestCase):
 class TestComplexData(unittest.TestCase):
     def setUp(self):
         # load test data
-        self.app = App(database=Mock_Database('tests/integration/fixtures/test_complex.json'))
+        self.app = App(database=Mock_Database(
+            'tests/integration/fixtures/test_complex.json'))
 
     def test_customer_count(self):
         self.assertEqual(len(self.app.customers), 1000)
