@@ -40,4 +40,3 @@ class UsertTest(unittest.TestCase):
         self.assertTrue(True)
         self.assertTrue(True)
         self.assertTrue(True)
-        self.assertTrue(True)
