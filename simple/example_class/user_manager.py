@@ -6,3 +6,7 @@ class UserManager:
     def addUser(self,newUser):
         if newUser != None and newUser.name!=None and newUser.email!=None and newUser.address!=None and newUser.age!=0:
             self.users.append(newUser)
+
+    def removeUser(self, position):
+        if type(position) == int and len(self.users)!=0 and position>=0 and len(self.users)>position:
+            self.users.pop(position)
