@@ -40,3 +40,6 @@ class UsertTest(unittest.TestCase):
         self.assertTrue(True)
         self.assertTrue(True)
         self.assertTrue(True)
+
+if __name__ == '__main__':
+    unittest.main()

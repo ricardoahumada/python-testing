@@ -19,5 +19,6 @@ class User:
         return f"Good morning, my address is {self.address}"
 
     def updateAge(self, newAge):
-        self.age=newAge
+        if newAge>0:
+            self.age=newAge
         
