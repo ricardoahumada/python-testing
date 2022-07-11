@@ -17,3 +17,7 @@ class User:
 
     def saysAddress(self):
         return f"Good morning, my address is {self.address}"
+
+    def updateAge(self, newAge):
+        self.age=newAge
+        
