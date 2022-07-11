@@ -10,3 +10,9 @@ class UserManager:
     def removeUser(self, position):
         if type(position) == int and len(self.users)!=0 and position>=0 and len(self.users)>position:
             self.users.pop(position)
+
+    def updateUser(self, userToBeUpdated):
+        return None
+
+    def getUser(self, email):
+        return None
